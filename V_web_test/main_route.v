@@ -2,14 +2,13 @@ module main
 
 import vweb
 
-port := '8080'
-
 struct App {
 	vweb.Context
 }
 
 fn main() {
 	app := App{}
+	port := 8080
 	vweb.run(app, port)
 }
 
